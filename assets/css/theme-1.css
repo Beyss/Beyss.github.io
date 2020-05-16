@@ -26,15 +26,15 @@
 .header .actions a{margin-right:10px;color:#fff}
 .header .actions a:last-child{margin-right:0}
 
-.header .profile-image{position:relative;top:50px; width:auto;height:auto;right: 40%}
+.header .profile-image{position:relative;top:50px; width:auto;height:auto;right: 37%}
 
-.header .name{font-size:48px;margin-bottom:15px;letter-spacing:0.5px;text-align: auto;}
+.header .name{max-width:800px;font-size:48px;margin-bottom:15px;letter-spacing:0.5px;text-align: right;}
 
-.header .title{font-size:28px;font-weight:300;color:rgba(255,255,255,0.8);margin-bottom:30px;text-align: auto}
+.header .title{max-width:800px;font-size:28px;font-weight:300;color:rgba(255,255,255,0.8);margin-bottom:30px;text-align: right}
 
 .header .intro{background:#00a5bb;padding-top:50px;padding-bottom:60px;position:relative;font-size:16px}
 
-.header .profile{max-width:800px;margin:1 auto;text-align:left}
+.header .profile{max-width:800px;text-align:left}
 
 .header .contact-info {background:#008fa1;padding-top:30px;padding-bottom:30px;font-size:16px}
 .header .contact-info ul{margin-bottom:0;text-align:left}
