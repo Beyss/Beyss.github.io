@@ -26,17 +26,13 @@
 .header .actions a{margin-right:10px;color:#fff}
 .header .actions a:last-child{margin-right:0}
 
-.header .profile-image {width:300px;height:300px;position:absolute;left:30px}
-.header .intro {position:relative;padding:30px;padding-left:190px;font-size:16px;color:#666}
-
-.header.profile-image{position:static;margin:0 auto;margin-bottom:30px;text-align:center}
-.header.intro{padding:0;text-align:center}
+.header .profile-image{position:absolute;top:5px; width:300px;height:300px;left:70px}
 
 .header .name{font-size:48px;margin-bottom:15px;letter-spacing:0.5px;text-align: left}
 
 .header .title{font-size:28px;font-weight:300;color:rgba(255,255,255,0.8);margin-bottom:30px;text-align: left}
 
-
+.header .intro{background:#00a5bb;padding-top:30px;padding-bottom:40px;position:relative;font-size:16px;	padding:30px; padding-left:100px}
 
 .header .profile{text-align:justify}
 
