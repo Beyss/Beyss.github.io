@@ -26,11 +26,11 @@
 .header .actions a{margin-right:10px;color:#fff}
 .header .actions a:last-child{margin-right:0}
 
-.header .profile-image{position:relative;top:70px; width:auto;height:auto;right: 37%}
+.header .profile-image{position:absolute;top:5px; width:auto;height:auto;left:70px}
 
-.header .name{font-size:48px;margin-bottom:15px;letter-spacing:0.5px;text-align: right;}
+.header .name{font-size:48px;margin-bottom:15px;letter-spacing:0.5px;text-align: left}
 
-.header .title{font-size:28px;font-weight:300;color:rgba(255,255,255,0.8);margin-bottom:30px;text-align: right}
+.header .title{font-size:28px;font-weight:300;color:rgba(255,255,255,0.8);margin-bottom:30px;text-align: left}
 
 .header .intro{background:#00a5bb;padding-top:30px;padding-bottom:40px;position:relative;font-size:16px}
 
@@ -58,9 +58,13 @@
 
 
 .section{-webkit-box-shadow:0 1px 4px 0 rgba(0,0,0,0.14);-moz-box-shadow:0 1px 4px 0 rgba(0,0,0,0.14);box-shadow:0 1px 4px 0 rgba(0,0,0,0.14);padding:45px;background:#fff;margin-bottom:45px;-webkit-border-radius:2px;-moz-border-radius:2px;-ms-border-radius:2px;-o-border-radius:2px;border-radius:2px;-moz-background-clip:padding;-webkit-background-clip:padding-box;background-clip:padding-box}
-.section:last-child{margin-bottom:0}.section-title{margin-top:0;margin-bottom:45px;font-size:24px;text-align:center}
-.timeline{border-left:3px solid #00BCD4;border-bottom-right-radius:2px;border-top-right-radius:2px;position:relative;padding:0 30px;margin-left:280px}.timeline .item{position:relative;margin-bottom:45px}.timeline .item:last-child{margin-bottom:0}.timeline 
-.item:before{content:"";position:absolute;left:-43px;top:0;display:inline-block;width:22px;height:22px;-webkit-border-radius:50%;-moz-border-radius:50%;-ms-border-radius:50%;-o-border-radius:50%;border-radius:50%;-moz-background-clip:padding;-webkit-background-clip:padding-box;background-clip:padding-box;background:#fff;border:3px solid #00BCD4}
+.section:last-child{margin-bottom:0}
+.section-title{margin-top:0;margin-bottom:45px;font-size:24px;text-align:center}
+
+.timeline{border-left:3px solid #00BCD4;border-bottom-right-radius:2px;border-top-right-radius:2px;position:relative;padding:0 30px;margin-left:280px}
+.timeline .item{position:relative;margin-bottom:45px}
+.timeline .item:last-child{margin-bottom:0}
+.timeline .item:before{content:"";position:absolute;left:-43px;top:0;display:inline-block;width:22px;height:22px;-webkit-border-radius:50%;-moz-border-radius:50%;-ms-border-radius:50%;-o-border-radius:50%;border-radius:50%;-moz-background-clip:padding;-webkit-background-clip:padding-box;background-clip:padding-box;background:#fff;border:3px solid #00BCD4}
 .timeline .item:after{content:"";position:absolute;left:-37px;top:6px;display:inline-block;width:10px;height:10px;-webkit-border-radius:50%;-moz-border-radius:50%;-ms-border-radius:50%;-o-border-radius:50%;border-radius:50%;-moz-background-clip:padding;-webkit-background-clip:padding-box;background-clip:padding-box;background:#00BCD4;z-index:10}
 .timeline .work-place{position:relative}
 .timeline .location{position:absolute;right:0;top:2px;color:#8a8a8a}
@@ -89,28 +93,69 @@
 .testimonials-section .carousel-indicators{bottom:0;margin-bottom:0}.testimonials-section .carousel-indicators li{background-color:#bdbdbd;border:none;width:10px;height:10px;margin:0;margin-right:8px;-webkit-border-radius:50%;-moz-border-radius:50%;-ms-border-radius:50%;-o-border-radius:50%;border-radius:50%;-moz-background-clip:padding;-webkit-background-clip:padding-box;background-clip:padding-box;cursor:pointer}
 .testimonials-section .carousel-indicators li.active{background-color:#00BCD4;width:10px;height:10px;margin:0;margin-right:8px}.portfolio-section .filters{list-style:none;margin:0 auto;margin-bottom:60px;text-align:center;border-bottom:1px solid #e8e8e8}
 
-.portfolio-section .filters .type{margin-right:30px;list-style:none;display:inline-block;padding:8px 15px;color:#8a8a8a;cursor:pointer;font-size:14px;text-transform:uppercase;font-weight:500}.portfolio-section .filters .type:last-child{margin-right:0}.portfolio-section .filters .type.active{color:#00BCD4;border-bottom:2px solid #00BCD4}.portfolio-section .item{margin-bottom:30px}.portfolio-section .item .figure{margin-bottom:0}.portfolio-section .item-inner{background:#00BCD4;color:#fff;-webkit-border-radius:2px;-moz-border-radius:2px;-ms-border-radius:2px;-o-border-radius:2px;border-radius:2px;-moz-background-clip:padding;-webkit-background-clip:padding-box;background-clip:padding-box;position:relative;-webkit-box-shadow:0 1px 4px 0 rgba(0,0,0,0.14);-moz-box-shadow:0 1px 4px 0 rgba(0,0,0,0.14);box-shadow:0 1px 4px 0 rgba(0,0,0,0.14)}.portfolio-section .item-inner:hover{background:#00c5de}.portfolio-section .item-inner:hover img{-webkit-opacity:.9;-moz-opacity:.9;opacity:.9}.portfolio-section .item-inner .content{padding:30px;padding-bottom:75px;position:relative}
+.portfolio-section .filters .type{margin-right:30px;list-style:none;display:inline-block;padding:8px 15px;color:#8a8a8a;cursor:pointer;font-size:14px;text-transform:uppercase;font-weight:500}
+.portfolio-section .filters .type:last-child{margin-right:0}
+.portfolio-section .filters .type.active{color:#00BCD4;border-bottom:2px solid #00BCD4}
+
+.portfolio-section .item{margin-bottom:30px}
+.portfolio-section .item .figure{margin-bottom:0}
+
+.portfolio-section .item-inner{background:#00BCD4;color:#fff;-webkit-border-radius:2px;-moz-border-radius:2px;-ms-border-radius:2px;-o-border-radius:2px;border-radius:2px;-moz-background-clip:padding;-webkit-background-clip:padding-box;background-clip:padding-box;position:relative;-webkit-box-shadow:0 1px 4px 0 rgba(0,0,0,0.14);-moz-box-shadow:0 1px 4px 0 rgba(0,0,0,0.14);box-shadow:0 1px 4px 0 rgba(0,0,0,0.14)}
+.portfolio-section .item-inner:hover{background:#00c5de}
+.portfolio-section .item-inner:hover img{-webkit-opacity:.9;-moz-opacity:.9;opacity:.9}
+.portfolio-section .item-inner .content{padding:30px;padding-bottom:75px;position:relative}
+
 .portfolio-section .item-inner .content a{color:#fff}
 .portfolio-section .item-inner .content .sub-title{font-size:16px;margin-top:0;margin-bottom:5px}
 .portfolio-section .item-inner .content .meta{color:rgba(255,255,255,0.8);font-size:14px}
 .portfolio-section .item-inner .content .action{position:absolute;bottom:30px;left:30px}
 .portfolio-section .item-inner .link-mask{display:block;position:absolute;width:100%;height:100%;left:0;top:0}
 
-
-
 .contact-section .intro{position:relative;padding:30px;padding-left:190px;font-size:16px;color:#666}
+
 .contact-section .intro .profile-image{width:120px;height:120px;position:absolute;left:30px}
-.contact-section .intro p{margin-bottom:15px}.contact-section .service-list{margin-left:30px;margin-bottom:15px}
-.contact-section .service-list li{margin-bottom:15px}.contact-section .service-list .svg-inline--fa{color:#00BCD4;margin-right:5px}.contact-section .social{margin-bottom:0}.contact-section .social li{margin-right:10px}.contact-section .social li:last-child{margin-right:0}.contact-section .social a{display:inline-block;text-align:center;font-size:24px;color:#8a8a8a}.contact-section .social a:hover{color:#00BCD4}.footer .container{padding:30px;color:#8a8a8a;letter-spacing:0.5px}.footer .container a{color:#8a8a8a}@media (max-width: 767px){.header .social{margin:0 auto;text-align:center}.header .actions{position:static;margin:0 auto;margin-bottom:30px;text-align:center}.header .actions .btn{margin-bottom:15px;font-size:12px;display:inline-block;width:100%}.header .actions .btn:last-child{margin-bottom:0}.header .name{font-size:36px}.header .title{font-size:22px}.header .contact-info li{margin-right:0;margin-bottom:15px;font-size:14px;width:100%;display:inline-block}.header .contact-info li:last-child{margin-bottom:0}
+
+.contact-section .intro p{margin-bottom:15px}
+.contact-section .service-list{margin-left:30px;margin-bottom:15px}
+.contact-section .service-list li{margin-bottom:15px}
+.contact-section .service-list .svg-inline--fa{color:#00BCD4;margin-right:5px}
+.contact-section .social{margin-bottom:0}
+.contact-section .social li{margin-right:10px}
+.contact-section .social li:last-child{margin-right:0}
+.contact-section .social a{display:inline-block;text-align:center;font-size:24px;color:#8a8a8a}
+.contact-section .social a:hover{color:#00BCD4}
+
+.footer .container{padding:30px;color:#8a8a8a;letter-spacing:0.5px}
+.footer .container a{color:#8a8a8a}@media (max-width: 767px){.header .social{margin:0 auto;text-align:center}
+
+.header .actions{position:static;margin:0 auto;margin-bottom:30px;text-align:center}
+.header .actions .btn{margin-bottom:15px;font-size:12px;display:inline-block;width:100%}
+.header .actions .btn:last-child{margin-bottom:0}
+.header .name{font-size:36px}
+.header .title{font-size:22px}
+.header .contact-info li{margin-right:0;margin-bottom:15px;font-size:14px;width:100%;display:inline-block}
+.header .contact-info li:last-child{margin-bottom:0}
 
 .section{padding:30px}.section-title{font-size:20px}
-.timeline{margin-left:0;padding-right:0}.timeline .place{margin-bottom:5px}
-.timeline .job-meta{position:static;margin-bottom:15px}.timeline .job-meta .title{max-width:none}
-.education-section .item{padding:0}.portfolio-section .filters .type{font-size:12px;margin-right:5px;padding:8px 5px}
-.portfolio-section .item-inner .content{padding:15px}.portfolio-section .item-inner .content .sub-title{font-size:14px;max-width:120px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
-.portfolio-section .item-inner .content .meta{margin-bottom:30px;max-width:120px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.portfolio-section .item-inner .content .action{position:static;font-size:12px}
-.contact-section .intro{padding:0;text-align:center}.contact-section .intro .profile-image{position:static;margin:0 auto;margin-bottom:30px;text-align:center}.contact-section .service-list{margin-left:0}
+
+.timeline{margin-left:0;padding-right:0}
+.timeline .place{margin-bottom:5px}
+.timeline .job-meta{position:static;margin-bottom:15px}
+.timeline .job-meta .title{max-width:none}
+
+.education-section .item{padding:0}
+
+.portfolio-section .filters .type{font-size:12px;margin-right:5px;padding:8px 5px}
+.portfolio-section .item-inner .content{padding:15px}
+.portfolio-section .item-inner .content .sub-title{font-size:14px;max-width:120px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.portfolio-section .item-inner .content .meta{margin-bottom:30px;max-width:120px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.portfolio-section .item-inner .content .action{position:static;font-size:12px}
+
+.contact-section .intro{padding:0;text-align:center}
+.contact-section .intro .profile-image{position:static;margin:0 auto;margin-bottom:30px;text-align:center}
+.contact-section .service-list{margin-left:0}
 .contact-section .social{margin:0 auto}}
+
 .config-trigger{position:absolute;top:30px;left:-36px;width:36px;height:36px;background:#222;color:#fff;text-align:center;-webkit-border-top-right-radius:0;-webkit-border-bottom-right-radius:0;-webkit-border-bottom-left-radius:4px;-webkit-border-top-left-radius:4px;-moz-border-radius-topright:0;-moz-border-radius-bottomright:0;-moz-border-radius-bottomleft:4px;-moz-border-radius-topleft:4px;border-top-right-radius:0;border-bottom-right-radius:0;border-bottom-left-radius:4px;border-top-left-radius:4px;-moz-background-clip:padding;-webkit-background-clip:padding-box;background-clip:padding-box;text-decoration:none}.config-trigger:hover{background:#000;text-decoration:none}.config-trigger:hover .svg-inline--fa{color:#fff}
 .config-trigger .svg-inline--fa{font-size:20px;margin-top:7px;display:block;color:rgba(255,255,255,0.8)}.config-panel{position:absolute;top:160px;right:-190px;z-index:30;width:190px}
 .config-panel .panel-inner{position:relative;background:#222;color:#fff;padding:15px;-webkit-border-top-right-radius:0;-webkit-border-bottom-right-radius:0;-webkit-border-bottom-left-radius:4px;-webkit-border-top-left-radius:4px;-moz-border-radius-topright:0;-moz-border-radius-bottomright:0;-moz-border-radius-bottomleft:4px;-moz-border-radius-topleft:4px;border-top-right-radius:0;border-bottom-right-radius:0;border-bottom-left-radius:4px;border-top-left-radius:4px;-moz-background-clip:padding;-webkit-background-clip:padding-box;background-clip:padding-box}.config-panel .panel-title{font-weight:600;margin-bottom:15px;font-size:14px;text-transform:uppercase}.config-panel label{color:#fff}.config-panel #color-options{margin-bottom:0px}
