@@ -15,7 +15,7 @@
 
 .header{background:#00BCD4;color:#fff}.header a{color:#fff}
 
-.header .top-bar{position:relative;padding-top:15px;padding-bottom:50px}
+.header .top-bar{position:relative;padding-top:15px;padding-bottom:40px}
 
 .header .social{margin-bottom:0}
 .header .social a{color:rgba(255,255,255,0.8);display:inline-block;text-align:center;width:32px;height:32px;-webkit-border-radius:50%;-moz-border-radius:50%;-ms-border-radius:50%;-o-border-radius:50%;border-radius:50%;-moz-background-clip:padding;-webkit-background-clip:padding-box;background-clip:padding-box;padding-top:3px;font-size:16px;border:2px solid rgba(255,255,255,0.8)}
@@ -26,15 +26,15 @@
 .header .actions a{margin-right:10px;color:#fff}
 .header .actions a:last-child{margin-right:0}
 
-.header .profile-image{position:relative;top:50px; width:auto;height:auto;right: 37%}
+.header .profile-image{position:relative;top:70px; width:auto;height:auto;right: 37%}
 
 .header .name{max-width:800px;font-size:48px;margin-bottom:15px;letter-spacing:0.5px;text-align: right;}
 
 .header .title{max-width:800px;font-size:28px;font-weight:300;color:rgba(255,255,255,0.8);margin-bottom:30px;text-align: right}
 
-.header .intro{background:#00a5bb;padding-top:50px;padding-bottom:60px;position:relative;font-size:16px}
+.header .intro{background:#00a5bb;padding-top:30px;padding-bottom:40px;position:relative;font-size:16px}
 
-.header .profile{max-width:800px;text-align:left}
+.header .profile{max-width:800px;text-align:justify}
 
 .header .contact-info {background:#008fa1;padding-top:30px;padding-bottom:30px;font-size:16px}
 .header .contact-info ul{margin-bottom:0;text-align:left}
